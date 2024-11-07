@@ -7,7 +7,7 @@ This repository provides a feature-rich calculator program written in Python, de
 ## Features
 
 - **Operations Supported**:
-  - Addition, Subtraction, Multiplication, Division
+  - Addition, Subtraction, Multiplication, Division, Modulus, Average
   - Power, Root operations with error handling
 - **Advanced Configuration**:
   - Customizable settings like precision, history size, and max input values, configured through environment variables or fallback defaults.
