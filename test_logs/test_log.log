@@ -593,3 +593,41 @@
 2024-11-06 02:22:28,323 - INFO - Set operation: Addition
 2024-11-06 02:22:28,323 - INFO - Calculation performed: Addition (2, 3) = 5
 2024-11-06 02:22:28,324 - INFO - History saved successfully to /Users/xurdo/projects/calculator_with_pandas/test_history/test_history.csv
+2024-11-08 01:19:53,499 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:53,504 - INFO - Loaded 19 calculations from history
+2024-11-08 01:19:53,504 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:53,504 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:53,504 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:53,505 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:53,506 - INFO - Loaded 19 calculations from history
+2024-11-08 01:19:53,506 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:53,506 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:53,506 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:53,508 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv
+2024-11-08 01:19:53,509 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:53,511 - INFO - Loaded 19 calculations from history
+2024-11-08 01:19:53,511 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:53,511 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:53,511 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:53,511 - INFO - Set operation: Addition
+2024-11-08 01:19:53,511 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-08 01:19:53,512 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv
+2024-11-08 01:19:58,037 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:58,039 - INFO - Loaded 20 calculations from history
+2024-11-08 01:19:58,039 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:58,039 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:58,039 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:58,040 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:58,042 - INFO - Loaded 20 calculations from history
+2024-11-08 01:19:58,042 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:58,042 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:58,042 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:58,043 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv
+2024-11-08 01:19:58,044 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-08 01:19:58,046 - INFO - Loaded 20 calculations from history
+2024-11-08 01:19:58,046 - INFO - Calculator initialized with configuration
+2024-11-08 01:19:58,046 - INFO - Added observer: LoggingObserver
+2024-11-08 01:19:58,046 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:19:58,046 - INFO - Set operation: Addition
+2024-11-08 01:19:58,046 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-08 01:19:58,047 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv

@@ -245,3 +245,19 @@
 2024-11-07 23:47:19,407 - INFO - Added observer: LoggingObserver
 2024-11-07 23:47:19,407 - INFO - Added observer: AutoSaveObserver
 2024-11-07 23:47:40,050 - INFO - History saved successfully to /Users/xurdo/projects/calculator_with_pandas/history/calculator_history.csv
+2024-11-08 01:04:55,911 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/logs/calculator.log
+2024-11-08 01:04:55,915 - INFO - Loaded 21 calculations from history
+2024-11-08 01:04:55,915 - INFO - Calculator initialized with configuration
+2024-11-08 01:04:55,915 - INFO - Added observer: LoggingObserver
+2024-11-08 01:04:55,915 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:05:07,918 - INFO - Set operation: Addition
+2024-11-08 01:05:07,919 - INFO - Calculation performed: Addition (1E+1, 2E+1) = 3E+1
+2024-11-08 01:05:07,926 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-08 01:05:07,926 - INFO - History auto-saved
+2024-11-08 01:05:45,611 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-08 01:12:15,525 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/logs/calculator.log
+2024-11-08 01:12:15,530 - INFO - Loaded 22 calculations from history
+2024-11-08 01:12:15,530 - INFO - Calculator initialized with configuration
+2024-11-08 01:12:15,530 - INFO - Added observer: LoggingObserver
+2024-11-08 01:12:15,530 - INFO - Added observer: AutoSaveObserver
+2024-11-08 01:12:24,968 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
