@@ -4,25 +4,24 @@ from typing import Any
 from app.calculation import Calculation
 
 class HistoryObserver(ABC):
-    """Abstract base class for calculator observers."""
     
     @abstractmethod
     def update(self, calculation: Calculation) -> None:
-        """
-        Handle new calculation event.
-        
-        Args:
-            calculation: The calculation that was performed
-        """
         pass
 
 class LoggingObserver(HistoryObserver):
-    """Observer that logs calculations to file."""
     
     def update(self, calculation: Calculation) -> None:
-        """Log calculation details."""
+        self._validate_calculation(calculation)
+        self._log_calculation(calculation)
+
+    @staticmethod
+    def _validate_calculation(calculation: Calculation) -> None:
         if calculation is None:
             raise AttributeError("Calculation cannot be None")
+
+    @staticmethod
+    def _log_calculation(calculation: Calculation) -> None:
         logging.info(
             f"Calculation performed: {calculation.operation} "
             f"({calculation.operand1}, {calculation.operand2}) = "
@@ -30,17 +29,26 @@ class LoggingObserver(HistoryObserver):
         )
 
 class AutoSaveObserver(HistoryObserver):
-    """Observer that automatically saves calculations."""
     
     def __init__(self, calculator: Any):
-        if not hasattr(calculator, 'config') or not hasattr(calculator, 'save_history'):
-            raise TypeError("Calculator must have 'config' and 'save_history' attributes")
-        self.calculator = calculator
+        self.calculator = self._validate_calculator(calculator)
 
     def update(self, calculation: Calculation) -> None:
-        """Trigger auto-save."""
+        self._validate_calculation(calculation)
+        self._auto_save_if_enabled()
+
+    @staticmethod
+    def _validate_calculator(calculator: Any) -> Any:
+        if not hasattr(calculator, 'config') or not hasattr(calculator, 'save_history'):
+            raise TypeError("Calculator must have 'config' and 'save_history' attributes")
+        return calculator
+
+    @staticmethod
+    def _validate_calculation(calculation: Calculation) -> None:
         if calculation is None:
             raise AttributeError("Calculation cannot be None")
+
+    def _auto_save_if_enabled(self) -> None:
         if self.calculator.config.auto_save:
             self.calculator.save_history()
             logging.info("History auto-saved")

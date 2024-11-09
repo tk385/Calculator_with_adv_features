@@ -261,3 +261,67 @@
 2024-11-08 01:12:15,530 - INFO - Added observer: LoggingObserver
 2024-11-08 01:12:15,530 - INFO - Added observer: AutoSaveObserver
 2024-11-08 01:12:24,968 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 07:52:20,753 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/logs/calculator.log
+2024-11-09 07:52:20,758 - INFO - Loaded 22 calculations from history
+2024-11-09 07:52:20,759 - INFO - Added observer: LoggingObserver
+2024-11-09 07:52:20,759 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:52:28,301 - INFO - Set operation: Addition
+2024-11-09 07:52:28,301 - INFO - Calculation performed: Addition (1, 2) = 3
+2024-11-09 07:52:28,302 - ERROR - Failed to save history: 'decimal.Decimal' object has no attribute 'isoformat'
+2024-11-09 07:54:33,271 - ERROR - Failed to save history: 'decimal.Decimal' object has no attribute 'isoformat'
+2024-11-09 07:54:36,007 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/logs/calculator.log
+2024-11-09 07:54:36,009 - INFO - Loaded 22 calculations from history
+2024-11-09 07:54:36,009 - INFO - Added observer: LoggingObserver
+2024-11-09 07:54:36,009 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:54:39,996 - INFO - Set operation: Addition
+2024-11-09 07:54:39,996 - INFO - Calculation performed: Addition (1, 2) = 3
+2024-11-09 07:54:40,005 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 07:54:40,005 - INFO - History auto-saved
+2024-11-09 07:54:51,240 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 08:07:55,647 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/logs/calculator.log
+2024-11-09 08:07:55,650 - ERROR - Failed to load history: Invalid calculation data: Invalid isoformat string: '3'
+2024-11-09 08:07:55,650 - WARNING - Could not load existing history: Failed to load history: Invalid calculation data: Invalid isoformat string: '3'
+2024-11-09 08:07:55,650 - INFO - Calculator initialized with configuration
+2024-11-09 08:07:55,650 - INFO - Added observer: LoggingObserver
+2024-11-09 08:07:55,650 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:07:59,129 - INFO - Set operation: Addition
+2024-11-09 08:07:59,129 - INFO - Calculation performed: Addition (2, 2) = 4
+2024-11-09 08:07:59,135 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 08:07:59,135 - INFO - History auto-saved
+2024-11-09 08:08:03,754 - INFO - Set operation: Mod
+2024-11-09 08:08:03,754 - INFO - Calculation performed: Mod (3, 3) = 0
+2024-11-09 08:08:03,756 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 08:08:03,756 - INFO - History auto-saved
+2024-11-09 08:08:18,427 - INFO - Set operation: Power
+2024-11-09 08:08:18,428 - INFO - Calculation performed: Power (2E+1, 2) = 400
+2024-11-09 08:08:18,430 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 08:08:18,430 - INFO - History auto-saved
+2024-11-09 08:08:29,335 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/history/calculator_history.csv
+2024-11-09 09:19:42,670 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/logs/calculator.log
+2024-11-09 09:19:42,674 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:19:42,674 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:19:42,674 - INFO - Calculator initialized with configuration
+2024-11-09 09:19:42,674 - INFO - Added observer: LoggingObserver
+2024-11-09 09:19:42,674 - INFO - Added observer: AutoSaveObserver
+2024-11-09 09:20:04,606 - INFO - Set operation: Addition
+2024-11-09 09:20:04,608 - INFO - Calculation performed: Addition (1.4E+2, 3) = 143
+2024-11-09 09:20:04,617 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 09:20:04,617 - INFO - History auto-saved
+2024-11-09 09:20:24,660 - INFO - Set operation: Addition
+2024-11-09 09:20:24,662 - INFO - Calculation performed: Addition (1, 2) = 3
+2024-11-09 09:20:24,664 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 09:20:24,665 - INFO - History auto-saved
+2024-11-09 09:20:38,799 - INFO - Set operation: Subtraction
+2024-11-09 09:20:38,799 - INFO - Calculation performed: Subtraction (1E+1, 1) = 9
+2024-11-09 09:20:38,802 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 09:20:38,802 - INFO - History auto-saved
+2024-11-09 09:20:51,247 - INFO - Set operation: Average
+2024-11-09 09:20:51,248 - INFO - Calculation performed: Average (1E+1, 3E+1) = 2E+1
+2024-11-09 09:20:51,252 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 09:20:51,252 - INFO - History auto-saved
+2024-11-09 09:21:52,238 - INFO - Set operation: Multiplication
+2024-11-09 09:21:52,239 - INFO - Calculation performed: Multiplication (2, 2) = 4
+2024-11-09 09:21:52,242 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv
+2024-11-09 09:21:52,242 - INFO - History auto-saved
+2024-11-09 09:22:25,871 - INFO - History cleared
+2024-11-09 09:22:35,449 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/history/calculator_history.csv

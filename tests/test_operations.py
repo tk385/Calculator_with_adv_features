@@ -16,10 +16,7 @@ from app.operations import (
 
 
 class TestOperation:
-    """Test base Operation class functionality."""
-
     def test_str_representation(self):
-        """Test that string representation returns class name."""
         class TestOp(Operation):
             def execute(self, a: Decimal, b: Decimal) -> Decimal:
                 return a
@@ -28,14 +25,12 @@ class TestOperation:
 
 
 class BaseOperationTest:
-    """Base test class for all operations."""
-
+  
     operation_class: Type[Operation]
     valid_test_cases: Dict[str, Dict[str, Any]]
     invalid_test_cases: Dict[str, Dict[str, Any]]
 
     def test_valid_operations(self):
-        """Test operation with valid inputs."""
         operation = self.operation_class()
         for name, case in self.valid_test_cases.items():
             a = Decimal(str(case["a"]))
@@ -45,7 +40,6 @@ class BaseOperationTest:
             assert result == expected, f"Failed case: {name}"
 
     def test_invalid_operations(self):
-        """Test operation with invalid inputs raises appropriate errors."""
         operation = self.operation_class()
         for name, case in self.invalid_test_cases.items():
             a = Decimal(str(case["a"]))
@@ -58,7 +52,6 @@ class BaseOperationTest:
 
 
 class TestAddition(BaseOperationTest):
-    """Test Addition operation."""
 
     operation_class = Addition
     valid_test_cases = {
@@ -73,11 +66,10 @@ class TestAddition(BaseOperationTest):
             "expected": "20000000000"
         },
     }
-    invalid_test_cases = {}  # Addition has no invalid cases
+    invalid_test_cases = {} 
 
 
 class TestSubtraction(BaseOperationTest):
-    """Test Subtraction operation."""
 
     operation_class = Subtraction
     valid_test_cases = {
@@ -92,7 +84,7 @@ class TestSubtraction(BaseOperationTest):
             "expected": "9000000000"
         },
     }
-    invalid_test_cases = {}  # Subtraction has no invalid cases
+    invalid_test_cases = {}  
 
 
 class TestMultiplication(BaseOperationTest):
@@ -136,8 +128,6 @@ class TestDivision(BaseOperationTest):
 
 
 class TestPower(BaseOperationTest):
-    """Test Power operation."""
-
     operation_class = Power
     valid_test_cases = {
         "positive_base_and_exponent": {"a": "2", "b": "3", "expected": "8"},
@@ -157,7 +147,6 @@ class TestPower(BaseOperationTest):
 
 
 class TestRoot(BaseOperationTest):
-    """Test Root operation."""
 
     operation_class = Root
     valid_test_cases = {
@@ -183,10 +172,8 @@ class TestRoot(BaseOperationTest):
 
 
 class TestOperationFactory:
-    """Test OperationFactory functionality."""
 
     def test_create_valid_operations(self):
-        """Test creation of all valid operations."""
         operation_map = {
             'add': Addition,
             'subtract': Subtraction,
@@ -199,17 +186,14 @@ class TestOperationFactory:
         for op_name, op_class in operation_map.items():
             operation = OperationFactory.create_operation(op_name)
             assert isinstance(operation, op_class)
-            # Test case-insensitive
             operation = OperationFactory.create_operation(op_name.upper())
             assert isinstance(operation, op_class)
 
     def test_create_invalid_operation(self):
-        """Test creation of invalid operation raises error."""
         with pytest.raises(ValueError, match="Unknown operation: invalid_op"):
             OperationFactory.create_operation("invalid_op")
 
     def test_register_valid_operation(self):
-        """Test registering a new valid operation."""
         class NewOperation(Operation):
             def execute(self, a: Decimal, b: Decimal) -> Decimal:
                 return a
@@ -219,7 +203,6 @@ class TestOperationFactory:
         assert isinstance(operation, NewOperation)
 
     def test_register_invalid_operation(self):
-        """Test registering an invalid operation class raises error."""
         class InvalidOperation:
             pass
 

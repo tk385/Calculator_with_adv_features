@@ -631,3 +631,447 @@
 2024-11-08 01:19:58,046 - INFO - Set operation: Addition
 2024-11-08 01:19:58,046 - INFO - Calculation performed: Addition (2, 3) = 5
 2024-11-08 01:19:58,047 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv
+2024-11-08 22:33:14,486 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-08 22:33:14,488 - INFO - Loaded 21 calculations from history
+2024-11-08 22:33:14,488 - INFO - Calculator initialized with configuration
+2024-11-08 22:33:14,488 - INFO - Added observer: LoggingObserver
+2024-11-08 22:33:14,488 - INFO - Added observer: AutoSaveObserver
+2024-11-08 22:33:14,490 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-08 22:33:14,492 - INFO - Loaded 21 calculations from history
+2024-11-08 22:33:14,492 - INFO - Calculator initialized with configuration
+2024-11-08 22:33:14,492 - INFO - Added observer: LoggingObserver
+2024-11-08 22:33:14,492 - INFO - Added observer: AutoSaveObserver
+2024-11-08 22:33:14,494 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-08 22:33:14,494 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-08 22:33:14,496 - INFO - Loaded 21 calculations from history
+2024-11-08 22:33:14,496 - INFO - Calculator initialized with configuration
+2024-11-08 22:33:14,496 - INFO - Added observer: LoggingObserver
+2024-11-08 22:33:14,496 - INFO - Added observer: AutoSaveObserver
+2024-11-08 22:33:14,496 - INFO - Set operation: Addition
+2024-11-08 22:33:14,496 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-08 22:33:14,497 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 07:49:56,412 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:49:56,415 - INFO - Loaded 22 calculations from history
+2024-11-09 07:49:56,415 - INFO - Added observer: LoggingObserver
+2024-11-09 07:49:56,415 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:49:56,416 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:49:56,418 - INFO - Loaded 22 calculations from history
+2024-11-09 07:49:56,418 - INFO - Added observer: LoggingObserver
+2024-11-09 07:49:56,418 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:49:56,420 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 07:49:56,421 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:49:56,422 - INFO - Loaded 22 calculations from history
+2024-11-09 07:49:56,422 - INFO - Added observer: LoggingObserver
+2024-11-09 07:49:56,422 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:49:56,423 - INFO - Set operation: Addition
+2024-11-09 07:49:56,423 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 07:49:56,423 - ERROR - Failed to save history: 'decimal.Decimal' object has no attribute 'isoformat'
+2024-11-09 07:54:54,040 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:54:54,042 - INFO - Loaded 22 calculations from history
+2024-11-09 07:54:54,042 - INFO - Added observer: LoggingObserver
+2024-11-09 07:54:54,042 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:54:54,043 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:54:54,045 - INFO - Loaded 22 calculations from history
+2024-11-09 07:54:54,045 - INFO - Added observer: LoggingObserver
+2024-11-09 07:54:54,045 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:54:54,047 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 07:54:54,048 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:54:54,049 - INFO - Loaded 22 calculations from history
+2024-11-09 07:54:54,049 - INFO - Added observer: LoggingObserver
+2024-11-09 07:54:54,049 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:54:54,050 - INFO - Set operation: Addition
+2024-11-09 07:54:54,050 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 07:54:54,050 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 07:59:50,582 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:59:50,584 - ERROR - Failed to load history: Invalid calculation data: Invalid isoformat string: '5'
+2024-11-09 07:59:50,584 - WARNING - Could not load existing history: Failed to load history: Invalid calculation data: Invalid isoformat string: '5'
+2024-11-09 07:59:50,584 - INFO - Added observer: LoggingObserver
+2024-11-09 07:59:50,585 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:59:50,586 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:59:50,587 - ERROR - Failed to load history: Invalid calculation data: Invalid isoformat string: '5'
+2024-11-09 07:59:50,587 - WARNING - Could not load existing history: Failed to load history: Invalid calculation data: Invalid isoformat string: '5'
+2024-11-09 07:59:50,587 - INFO - Added observer: LoggingObserver
+2024-11-09 07:59:50,587 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:59:50,589 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 07:59:50,590 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 07:59:50,590 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 07:59:50,590 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 07:59:50,590 - INFO - Added observer: LoggingObserver
+2024-11-09 07:59:50,590 - INFO - Added observer: AutoSaveObserver
+2024-11-09 07:59:50,590 - INFO - Set operation: Addition
+2024-11-09 07:59:50,590 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 07:59:50,591 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:02:33,328 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:02:33,330 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:02:33,330 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:02:33,330 - INFO - Calculator initialized with configuration
+2024-11-09 08:02:33,330 - INFO - Added observer: LoggingObserver
+2024-11-09 08:02:33,330 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:02:33,331 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:02:33,332 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:02:33,332 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:02:33,332 - INFO - Calculator initialized with configuration
+2024-11-09 08:02:33,332 - INFO - Added observer: LoggingObserver
+2024-11-09 08:02:33,332 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:02:33,334 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:02:33,335 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:02:33,335 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:02:33,335 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:02:33,335 - INFO - Calculator initialized with configuration
+2024-11-09 08:02:33,335 - INFO - Added observer: LoggingObserver
+2024-11-09 08:02:33,335 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:02:33,335 - INFO - Set operation: Addition
+2024-11-09 08:02:33,335 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:02:33,336 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:04:21,230 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:04:21,232 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:04:21,232 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:04:21,232 - INFO - Calculator initialized with configuration
+2024-11-09 08:04:21,232 - INFO - Added observer: LoggingObserver
+2024-11-09 08:04:21,233 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:04:21,234 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:04:21,234 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:04:21,234 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:04:21,235 - INFO - Calculator initialized with configuration
+2024-11-09 08:04:21,235 - INFO - Added observer: LoggingObserver
+2024-11-09 08:04:21,235 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:04:21,236 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:04:21,237 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:04:21,237 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:04:21,237 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:04:21,237 - INFO - Calculator initialized with configuration
+2024-11-09 08:04:21,237 - INFO - Added observer: LoggingObserver
+2024-11-09 08:04:21,237 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:04:21,238 - INFO - Set operation: Addition
+2024-11-09 08:04:21,238 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:04:21,238 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:05:01,128 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:05:01,130 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:05:01,130 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:05:01,130 - INFO - Calculator initialized with configuration
+2024-11-09 08:05:01,130 - INFO - Added observer: LoggingObserver
+2024-11-09 08:05:01,130 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:05:01,132 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:05:01,133 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:05:01,133 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:05:01,133 - INFO - Calculator initialized with configuration
+2024-11-09 08:05:01,133 - INFO - Added observer: LoggingObserver
+2024-11-09 08:05:01,133 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:05:01,134 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:05:01,135 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:05:01,136 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:05:01,136 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:05:01,136 - INFO - Calculator initialized with configuration
+2024-11-09 08:05:01,136 - INFO - Added observer: LoggingObserver
+2024-11-09 08:05:01,136 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:05:01,136 - INFO - Set operation: Addition
+2024-11-09 08:05:01,136 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:05:01,137 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:06:06,880 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:06,882 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:06,882 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:06,882 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:06,882 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:06,882 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:06,884 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:06,884 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:06,884 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:06,885 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:06,885 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:06,885 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:06,886 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:06:06,887 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:06,887 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:06:06,887 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:06:06,887 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:06,887 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:06,887 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:06,887 - INFO - Set operation: Addition
+2024-11-09 08:06:06,887 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:06:06,888 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:06:58,111 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:58,112 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:58,112 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:58,112 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:58,112 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:58,112 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:58,114 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:58,114 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:58,114 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:06:58,114 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:58,115 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:58,115 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:58,116 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:06:58,117 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:06:58,117 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:06:58,117 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:06:58,117 - INFO - Calculator initialized with configuration
+2024-11-09 08:06:58,117 - INFO - Added observer: LoggingObserver
+2024-11-09 08:06:58,117 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:06:58,118 - INFO - Set operation: Addition
+2024-11-09 08:06:58,118 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:06:58,118 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:08:52,090 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:08:52,091 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:08:52,091 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:08:52,091 - INFO - Calculator initialized with configuration
+2024-11-09 08:08:52,091 - INFO - Added observer: LoggingObserver
+2024-11-09 08:08:52,091 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:08:52,092 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:08:52,093 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:08:52,093 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:08:52,093 - INFO - Calculator initialized with configuration
+2024-11-09 08:08:52,093 - INFO - Added observer: LoggingObserver
+2024-11-09 08:08:52,093 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:08:52,094 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:08:52,095 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:08:52,095 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:08:52,095 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:08:52,095 - INFO - Calculator initialized with configuration
+2024-11-09 08:08:52,095 - INFO - Added observer: LoggingObserver
+2024-11-09 08:08:52,095 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:08:52,095 - INFO - Set operation: Addition
+2024-11-09 08:08:52,095 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:08:52,096 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:10:09,367 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:10:09,368 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:10:09,368 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:10:09,368 - INFO - Calculator initialized with configuration
+2024-11-09 08:10:09,368 - INFO - Added observer: LoggingObserver
+2024-11-09 08:10:09,368 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:10:09,370 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:10:09,370 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:10:09,370 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:10:09,370 - INFO - Calculator initialized with configuration
+2024-11-09 08:10:09,370 - INFO - Added observer: LoggingObserver
+2024-11-09 08:10:09,370 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:10:09,372 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:10:09,373 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:10:09,373 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:10:09,373 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:10:09,373 - INFO - Calculator initialized with configuration
+2024-11-09 08:10:09,373 - INFO - Added observer: LoggingObserver
+2024-11-09 08:10:09,373 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:10:09,373 - INFO - Set operation: Addition
+2024-11-09 08:10:09,373 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:10:09,375 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:11:23,767 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:11:23,769 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:11:23,769 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:11:23,769 - INFO - Calculator initialized with configuration
+2024-11-09 08:11:23,769 - INFO - Added observer: LoggingObserver
+2024-11-09 08:11:23,769 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:11:23,770 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:11:23,770 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:11:23,770 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:11:23,770 - INFO - Calculator initialized with configuration
+2024-11-09 08:11:23,770 - INFO - Added observer: LoggingObserver
+2024-11-09 08:11:23,771 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:11:23,772 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:11:23,773 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:11:23,773 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:11:23,773 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:11:23,773 - INFO - Calculator initialized with configuration
+2024-11-09 08:11:23,773 - INFO - Added observer: LoggingObserver
+2024-11-09 08:11:23,773 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:11:23,773 - INFO - Set operation: Addition
+2024-11-09 08:11:23,773 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:11:23,774 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:12:28,682 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:12:28,683 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:12:28,683 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:12:28,683 - INFO - Calculator initialized with configuration
+2024-11-09 08:12:28,683 - INFO - Added observer: LoggingObserver
+2024-11-09 08:12:28,683 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:12:28,684 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:12:28,685 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:12:28,685 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:12:28,685 - INFO - Calculator initialized with configuration
+2024-11-09 08:12:28,685 - INFO - Added observer: LoggingObserver
+2024-11-09 08:12:28,685 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:12:28,687 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:12:28,688 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:12:28,688 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:12:28,688 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:12:28,688 - INFO - Calculator initialized with configuration
+2024-11-09 08:12:28,688 - INFO - Added observer: LoggingObserver
+2024-11-09 08:12:28,688 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:12:28,688 - INFO - Set operation: Addition
+2024-11-09 08:12:28,688 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:12:28,689 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:13:07,434 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:13:07,435 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:13:07,435 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:13:07,435 - INFO - Calculator initialized with configuration
+2024-11-09 08:13:07,435 - INFO - Added observer: LoggingObserver
+2024-11-09 08:13:07,435 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:13:07,437 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:13:07,437 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:13:07,437 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:13:07,437 - INFO - Calculator initialized with configuration
+2024-11-09 08:13:07,437 - INFO - Added observer: LoggingObserver
+2024-11-09 08:13:07,437 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:13:07,439 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:13:07,439 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:13:07,440 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:13:07,440 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:13:07,440 - INFO - Calculator initialized with configuration
+2024-11-09 08:13:07,440 - INFO - Added observer: LoggingObserver
+2024-11-09 08:13:07,440 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:13:07,440 - INFO - Set operation: Addition
+2024-11-09 08:13:07,440 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:13:07,441 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:38:43,265 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:38:43,266 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:38:43,266 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:38:43,266 - INFO - Calculator initialized with configuration
+2024-11-09 08:38:43,266 - INFO - Added observer: LoggingObserver
+2024-11-09 08:38:43,266 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:38:43,267 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:38:43,268 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:38:43,268 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:38:43,268 - INFO - Calculator initialized with configuration
+2024-11-09 08:38:43,268 - INFO - Added observer: LoggingObserver
+2024-11-09 08:38:43,268 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:38:43,270 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:38:43,271 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:38:43,271 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:38:43,271 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:38:43,271 - INFO - Calculator initialized with configuration
+2024-11-09 08:38:43,271 - INFO - Added observer: LoggingObserver
+2024-11-09 08:38:43,271 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:38:43,271 - INFO - Set operation: Addition
+2024-11-09 08:38:43,272 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:38:43,273 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:40:15,396 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:15,397 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:15,397 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:15,397 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:15,397 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:15,397 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:15,398 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:15,399 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:15,399 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:15,399 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:15,399 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:15,399 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:15,400 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:40:15,401 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:15,401 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:40:15,401 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:40:15,401 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:15,401 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:15,402 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:15,402 - INFO - Set operation: Addition
+2024-11-09 08:40:15,402 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:40:15,403 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:40:59,648 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:59,649 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:59,649 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:59,649 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:59,649 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:59,649 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:59,650 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:59,651 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:59,651 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:40:59,651 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:59,651 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:59,651 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:59,652 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:40:59,653 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:40:59,653 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:40:59,653 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:40:59,653 - INFO - Calculator initialized with configuration
+2024-11-09 08:40:59,653 - INFO - Added observer: LoggingObserver
+2024-11-09 08:40:59,653 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:40:59,654 - INFO - Set operation: Addition
+2024-11-09 08:40:59,654 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:40:59,654 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:41:33,632 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:41:33,633 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:41:33,634 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:41:33,634 - INFO - Calculator initialized with configuration
+2024-11-09 08:41:33,634 - INFO - Added observer: LoggingObserver
+2024-11-09 08:41:33,634 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:41:33,635 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:41:33,635 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:41:33,635 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:41:33,635 - INFO - Calculator initialized with configuration
+2024-11-09 08:41:33,635 - INFO - Added observer: LoggingObserver
+2024-11-09 08:41:33,636 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:41:33,637 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:41:33,638 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:41:33,638 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:41:33,638 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:41:33,638 - INFO - Calculator initialized with configuration
+2024-11-09 08:41:33,638 - INFO - Added observer: LoggingObserver
+2024-11-09 08:41:33,638 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:41:33,639 - INFO - Set operation: Addition
+2024-11-09 08:41:33,639 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:41:33,640 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:42:22,013 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:42:22,014 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:42:22,014 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:42:22,014 - INFO - Calculator initialized with configuration
+2024-11-09 08:42:22,014 - INFO - Added observer: LoggingObserver
+2024-11-09 08:42:22,014 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:42:22,015 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:42:22,016 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:42:22,016 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:42:22,016 - INFO - Calculator initialized with configuration
+2024-11-09 08:42:22,016 - INFO - Added observer: LoggingObserver
+2024-11-09 08:42:22,016 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:42:22,017 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:42:22,018 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:42:22,018 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:42:22,018 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:42:22,018 - INFO - Calculator initialized with configuration
+2024-11-09 08:42:22,018 - INFO - Added observer: LoggingObserver
+2024-11-09 08:42:22,018 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:42:22,018 - INFO - Set operation: Addition
+2024-11-09 08:42:22,018 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:42:22,019 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:58:59,847 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:58:59,848 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:58:59,848 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:58:59,848 - INFO - Calculator initialized with configuration
+2024-11-09 08:58:59,848 - INFO - Added observer: LoggingObserver
+2024-11-09 08:58:59,848 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:58:59,849 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:58:59,850 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:58:59,850 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 08:58:59,850 - INFO - Calculator initialized with configuration
+2024-11-09 08:58:59,850 - INFO - Added observer: LoggingObserver
+2024-11-09 08:58:59,850 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:58:59,852 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 08:58:59,854 - INFO - Logging initialized at: /Users/xurdo/projects/Adv_caclulator_using_pandas/test_logs/test_log.log
+2024-11-09 08:58:59,854 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 08:58:59,854 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 08:58:59,854 - INFO - Calculator initialized with configuration
+2024-11-09 08:58:59,854 - INFO - Added observer: LoggingObserver
+2024-11-09 08:58:59,854 - INFO - Added observer: AutoSaveObserver
+2024-11-09 08:58:59,854 - INFO - Set operation: Addition
+2024-11-09 08:58:59,854 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 08:58:59,855 - INFO - History saved successfully to /Users/xurdo/projects/Adv_caclulator_using_pandas/test_history/test_history.csv
+2024-11-09 09:18:37,495 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-09 09:18:37,496 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:18:37,496 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:18:37,496 - INFO - Calculator initialized with configuration
+2024-11-09 09:18:37,496 - INFO - Added observer: LoggingObserver
+2024-11-09 09:18:37,496 - INFO - Added observer: AutoSaveObserver
+2024-11-09 09:18:37,497 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-09 09:18:37,498 - ERROR - Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:18:37,498 - WARNING - Could not load existing history: Failed to load history: fromisoformat: argument must be str
+2024-11-09 09:18:37,498 - INFO - Calculator initialized with configuration
+2024-11-09 09:18:37,498 - INFO - Added observer: LoggingObserver
+2024-11-09 09:18:37,498 - INFO - Added observer: AutoSaveObserver
+2024-11-09 09:18:37,499 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv
+2024-11-09 09:18:37,500 - INFO - Logging initialized at: /Users/xurdo/projects/Calculator_with_adv_features/test_logs/test_log.log
+2024-11-09 09:18:37,500 - ERROR - Failed to load history: No columns to parse from file
+2024-11-09 09:18:37,500 - WARNING - Could not load existing history: Failed to load history: No columns to parse from file
+2024-11-09 09:18:37,500 - INFO - Calculator initialized with configuration
+2024-11-09 09:18:37,500 - INFO - Added observer: LoggingObserver
+2024-11-09 09:18:37,500 - INFO - Added observer: AutoSaveObserver
+2024-11-09 09:18:37,501 - INFO - Set operation: Addition
+2024-11-09 09:18:37,501 - INFO - Calculation performed: Addition (2, 3) = 5
+2024-11-09 09:18:37,502 - INFO - History saved successfully to /Users/xurdo/projects/Calculator_with_adv_features/test_history/test_history.csv

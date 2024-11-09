@@ -18,7 +18,6 @@ This repository provides a feature-rich calculator program written in Python, de
 
 ## Screenshots
 
-
 <img width="402" alt="Screenshot 2024-11-08 at 1 07 07 AM" src="https://github.com/user-attachments/assets/96eb0b8f-9acc-417a-9738-096a77c1d38d">
 
 <img width="341" alt="Screenshot 2024-11-08 at 1 05 21 AM" src="https://github.com/user-attachments/assets/4133e8f4-1b0f-4cfd-b78c-103009861dbb">
@@ -27,12 +26,16 @@ This repository provides a feature-rich calculator program written in Python, de
 
 ## Installation
 
-0. Make sure your environment's python version is > 3.10 to be able to run this :
+0. Make sure your environment's python version is >= 3.10 to be able to run this :
+
+   ```bash
+   Download latest python version form here : https://www.python.org/downloads/
+   ```
 
 1. Clone this repository:
 
    ```bash
-   git clone https://github.com/yourusername/Calculator_with_adv_features.git
+   git clone https://github.com/sashankpannala/Adv_caclulator_using_pandas.git
    cd Calculator_with_adv_features
    ```
 

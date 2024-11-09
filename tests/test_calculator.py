@@ -50,11 +50,14 @@ def test_calculator_initialization(calculator):
 def test_logging_setup(logging_info_mock):
     with patch.object(CalculatorConfig, 'log_dir', new_callable=PropertyMock) as mock_log_dir, \
          patch.object(CalculatorConfig, 'log_file', new_callable=PropertyMock) as mock_log_file:
+        
         mock_log_dir.return_value = Path('/tmp/logs')
         mock_log_file.return_value = Path('/tmp/logs/calculator.log')
         
         # Instantiate calculator to trigger logging
         calculator = Calculator(CalculatorConfig())
+        
+        # Assert the expected log call
         logging_info_mock.assert_any_call("Calculator initialized with configuration")
 
 # Test Adding and Removing Observers
@@ -84,6 +87,12 @@ def test_perform_operation_addition(calculator):
     calculator.set_operation(operation)
     result = calculator.perform_operation(2, 3)
     assert result == Decimal('5')
+
+def test_perform_operation_subtraction(calculator):
+    operation = OperationFactory.create_operation('subtract')
+    calculator.set_operation(operation)
+    result = calculator.perform_operation(10, 4)
+    assert result == Decimal('6')
 
 def test_perform_operation_validation_error(calculator):
     calculator.set_operation(OperationFactory.create_operation('add'))
@@ -133,20 +142,13 @@ def test_load_history(mock_exists, mock_read_csv, calculator):
         'timestamp': [datetime.datetime.now().isoformat()]
     })
     
-    # Test the load_history functionality
-    try:
-        calculator.load_history()
-        # Verify history length after loading
-        assert len(calculator.history) == 1
-        # Verify the loaded values
-        assert calculator.history[0].operation == "Addition"
-        assert calculator.history[0].operand1 == Decimal("2")
-        assert calculator.history[0].operand2 == Decimal("3")
-        assert calculator.history[0].result == Decimal("5")
-    except OperationError:
-        pytest.fail("Loading history failed due to OperationError")
+    calculator.load_history()
+    assert len(calculator.history) == 1
+    assert calculator.history[0].operation == "Addition"
+    assert calculator.history[0].operand1 == Decimal("2")
+    assert calculator.history[0].operand2 == Decimal("3")
+    assert calculator.history[0].result == Decimal("5")
         
-            
 # Test Clearing History
 
 def test_clear_history(calculator):
@@ -157,26 +159,22 @@ def test_clear_history(calculator):
     assert calculator.history == []
     assert calculator.undo_stack == []
     assert calculator.redo_stack == []
-from unittest.mock import patch
 
-# Test REPL exit command
+# Test REPL Commands
+
 @patch('builtins.input', side_effect=['exit'])
 @patch('builtins.print')
 def test_calculator_repl_exit(mock_print, mock_input):
     with patch('app.calculator.Calculator.save_history') as mock_save_history:
         calculator_repl()
-        # Assert that history was saved and appropriate messages were printed
         mock_save_history.assert_called_once()
         mock_print.assert_any_call("History saved successfully.")
         mock_print.assert_any_call("Goodbye!")
 
-# Test REPL help command
 @patch('builtins.input', side_effect=['help', 'exit'])
 @patch('builtins.print')
 def test_calculator_repl_help(mock_print, mock_input):
     calculator_repl()
-
-    # Expected help text based on the `display_help` function output
     expected_help_text = """
         Calculator Commands:
         ----------------------
@@ -200,16 +198,13 @@ def test_calculator_repl_help(mock_print, mock_input):
 
         Enter numbers for operations and follow prompts.
         """
-    # Assert that the help message was printed
     mock_print.assert_any_call(expected_help_text)
     mock_print.assert_any_call("Goodbye!")
 
-# Test REPL addition command
 @patch('builtins.input', side_effect=['add', '2', '3', 'exit'])
 @patch('builtins.print')
 def test_calculator_repl_addition(mock_print, mock_input):
     calculator_repl()
-    # Check that the addition result is printed
     mock_print.assert_any_call("\nResult: 5")
 
 # Test Performing Operations for Average
