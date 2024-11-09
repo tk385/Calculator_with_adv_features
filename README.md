@@ -18,11 +18,16 @@ This repository provides a feature-rich calculator program written in Python, de
 
 ## Screenshots
 
-<img width="402" alt="Screenshot 2024-11-08 at 1 07 07 AM" src="https://github.com/user-attachments/assets/96eb0b8f-9acc-417a-9738-096a77c1d38d">
+<img width="278" alt="Screenshot 2024-11-09 at 9 22 32 AM" src="https://github.com/user-attachments/assets/1162375f-2569-4ebb-bbfc-482d25588e05">
+<img width="294" alt="Screenshot 2024-11-09 at 9 22 41 AM" src="https://github.com/user-attachments/assets/32e82aa8-c118-473c-bc9d-4e217403acc3">
+<img width="511" alt="Screenshot 2024-11-09 at 9 21 05 AM" src="https://github.com/user-attachments/assets/f7160130-e37b-437e-9f69-1acf202751a8">
+<img width="518" alt="Screenshot 2024-11-09 at 9 21 16 AM" src="https://github.com/user-attachments/assets/cd364948-db12-4ce3-90bf-6463d012ffcc">
+<img width="335" alt="Screenshot 2024-11-09 at 9 21 28 AM" src="https://github.com/user-attachments/assets/c500e86c-bf9d-4cf7-88ce-9e4c1e0a9e71">
+<img width="628" alt="Screenshot 2024-11-09 at 9 21 37 AM" src="https://github.com/user-attachments/assets/4d49aabe-c19f-445c-86aa-85a157e8d3b4">
+<img width="389" alt="Screenshot 2024-11-09 at 9 21 44 AM" src="https://github.com/user-attachments/assets/a717fee2-9395-4206-92bf-f5432a85730e">
+<img width="376" alt="Screenshot 2024-11-09 at 9 21 59 AM" src="https://github.com/user-attachments/assets/096422e1-9c22-4683-9761-507a6b84fb43">
+<img width="313" alt="Screenshot 2024-11-09 at 9 22 12 AM" src="https://github.com/user-attachments/assets/45bddd08-307e-4b05-b381-5fc948c0cc8f">
 
-<img width="341" alt="Screenshot 2024-11-08 at 1 05 21 AM" src="https://github.com/user-attachments/assets/4133e8f4-1b0f-4cfd-b78c-103009861dbb">
-<img width="569" alt="Screenshot 2024-11-08 at 1 05 36 AM" src="https://github.com/user-attachments/assets/104ad9d0-091a-4400-adb3-dd4396c42458">
-<img width="344" alt="Screenshot 2024-11-08 at 1 05 52 AM" src="https://github.com/user-attachments/assets/c9b068ed-d449-4329-9864-fc281a294ea7">
 
 ## Installation
 
