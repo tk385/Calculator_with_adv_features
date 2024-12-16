@@ -32,11 +32,11 @@ This repository provides a feature-rich calculator program written in Python, de
 
 # Groq ai calculator
 
-![alt text]("./groq.png")
+![alt text](./groq.png)
 
 # Postgress Sql
 
-![alt text]("./postgress.png")
+![alt text](./postgress.png)
 
 
 ## Installation
