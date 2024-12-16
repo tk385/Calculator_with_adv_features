@@ -29,6 +29,16 @@ This repository provides a feature-rich calculator program written in Python, de
 <img width="313" alt="Screenshot 2024-11-09 at 9 22 12 AM" src="https://github.com/user-attachments/assets/45bddd08-307e-4b05-b381-5fc948c0cc8f">
 
 
+
+# Groq ai calculator
+
+![alt text]("./groq.png")
+
+# Postgress Sql
+
+![alt text]("./postgress.png")
+
+
 ## Installation
 
 0. Make sure your environment's python version is >= 3.10 to be able to run this :

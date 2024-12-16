@@ -672,3 +672,12 @@
 2024-12-16 08:22:11,021 - INFO - Result saved to PostgreSQL.
 2024-12-16 08:22:15,747 - INFO - History saved successfully to /Users/thummalasujithreddy/Downloads/aical/history/calculator_history.csv
 2024-12-16 08:22:15,827 - INFO - PostgreSQL connection closed.
+2024-12-16 09:06:29,146 - INFO - Logging initialized at: /Users/thummalasujithreddy/Downloads/aical/logs/calculator.log
+2024-12-16 09:06:29,151 - ERROR - Failed to load history: type object 'Calculation' has no attribute 'from_dict'
+2024-12-16 09:06:29,151 - WARNING - Could not load existing history: Failed to load history: type object 'Calculation' has no attribute 'from_dict'
+2024-12-16 09:06:29,151 - INFO - Calculator initialized with configuration
+2024-12-16 09:06:29,360 - INFO - PostgreSQL connection established and table initialized.
+2024-12-16 09:06:29,360 - INFO - Added observer: LoggingObserver
+2024-12-16 09:06:29,360 - INFO - Added observer: AutoSaveObserver
+2024-12-16 09:08:55,699 - INFO - History saved successfully to /Users/thummalasujithreddy/Downloads/aical/history/calculator_history.csv
+2024-12-16 09:08:55,744 - INFO - PostgreSQL connection closed.
