@@ -3,8 +3,6 @@ from decimal import Decimal
 from typing import Dict
 from app.exceptions import ValidationError
 
-
-
 class Operation(ABC):
     @abstractmethod
     def execute(self, a: Decimal, b: Decimal) -> Decimal:
@@ -71,7 +69,6 @@ class Mod(Operation):
             raise ValidationError("Modulus by zero is not allowed")
         return a % b
 
-
 class OperationFactory:
     _operations: Dict[str, type] = {
         'add': Addition,
@@ -95,5 +92,4 @@ class OperationFactory:
         operation_class = cls._operations.get(operation_type.lower())
         if not operation_class:
             raise ValueError(f"Unknown operation: {operation_type}")
-        return operation_class()  
-
+        return operation_class()

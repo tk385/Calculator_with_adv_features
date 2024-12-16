@@ -1,101 +1,172 @@
 from dataclasses import dataclass, field
-import datetime
 from decimal import Decimal, InvalidOperation
+from typing import Any, Dict, List, Optional, Union
+from dotenv import load_dotenv
+import requests
+import json
+import os
 import logging
-from typing import Any, Dict
+import datetime
 
 from app.exceptions import OperationError
 
+# Load environment variables from .env file
+load_dotenv()
+
+# API Endpoint and API Key
+API_ENDPOINT = "https://api.groq.com/openai/v1/chat/completions"
+API_KEY = os.getenv("API_KEY") 
+
+# Define functions for arithmetic operations
+def add(a, b):
+    return a + b
+
+def subtract(a, b):
+    return a - b
+
+def multiply(a, b):
+    return a * b
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division by zero"
+
+# Function to call the Groq API
+def call_groq_function(prompt, functions, model="llama3-8b-8192"):
+    headers = {
+        "Authorization": f"Bearer {API_KEY}",
+        "Content-Type": "application/json",
+    }
+
+    payload = {
+        "model": model,
+        "messages": [{"role": "user", "content": prompt}],
+        "functions": functions,
+        "function_call": "auto",
+    }
+
+    try:
+        response = requests.post(API_ENDPOINT, headers=headers, json=payload)
+        response.raise_for_status()
+        data = response.json()
+
+        # Check if the model called a function
+        if "function_call" in data["choices"][0]["message"]:
+            function_name = data["choices"][0]["message"]["function_call"]["name"]
+            arguments = json.loads(data["choices"][0]["message"]["function_call"]["arguments"])
+            return function_name, arguments
+
+        return None, None
+
+    except requests.exceptions.RequestException as e:
+        print(f"An error occurred: {e}")
+        return None, None
 
 @dataclass
 class Calculation:
     operation: str
     operand1: Decimal
     operand2: Decimal
+    mode: str
     result: Decimal = field(init=False)
     timestamp: datetime.datetime = field(default_factory=datetime.datetime.now)
 
     def __post_init__(self):
-        self.result = self._perform_calculation()
+        self.perform_calculation()
 
-    def _perform_calculation(self) -> Decimal:
+    def perform_calculation(self):
+        if self.mode == 'groq':
+            self.result = self.perform_groq_calculation()
+        else:
+            self.result = self.perform_standard_calculation()
+
+    def perform_standard_calculation(self) -> Decimal:
         try:
-            return self._apply_operation()
-        except (InvalidOperation, ValueError, ArithmeticError) as e:
-            raise OperationError(f"Calculation failed: {str(e)}")
+            if self.operation == 'add':
+                return self.operand1 + self.operand2
+            elif self.operation == 'subtract':
+                return self.operand1 - self.operand2
+            elif self.operation == 'multiply':
+                return self.operand1 * self.operand2
+            elif self.operation == 'divide':
+                return self.operand1 / self.operand2
+            else:
+                raise OperationError(f"Unsupported operation: {self.operation}")
+        except InvalidOperation as e:
+            logging.error(f"Invalid operation: {e}")
+            raise OperationError(f"Invalid operation: {e}")
 
-    def _apply_operation(self) -> Decimal:
-        operations = {
-            "Addition": lambda x, y: x + y,
-            "Subtraction": lambda x, y: x - y,
-            "Multiplication": lambda x, y: x * y,
-            "Division": lambda x, y: x / y if y != 0 else self._raise_error("Division by zero is not allowed"),
-            "Power": lambda x, y: Decimal(pow(float(x), float(y))) if y >= 0 else self._raise_error("Negative exponents are not supported"),
-            "Root": lambda x, y: Decimal(pow(float(x), 1/float(y))) if x >= 0 and y != 0 else self._raise_error("Invalid root operation"),
-            "Average": lambda x, y: (x + y) / 2,
-            "Mod": lambda x, y: x % y if y != 0 else self._raise_error("Division by zero is not allowed")
-        }
-        op = operations.get(self.operation)
-        if not op:
-            raise OperationError(f"Unknown operation: {self.operation}")
-        return op(self.operand1, self.operand2)
+    def perform_groq_calculation(self) -> Decimal:
+        logging.info("Performing calculation using Groq AI")
+        functions = [
+            {
+                "name": "add",
+                "description": "Add two numbers.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {"type": "number", "description": "The first number."},
+                        "b": {"type": "number", "description": "The second number."}
+                    },
+                    "required": ["a", "b"]
+                },
+            },
+            {
+                "name": "subtract",
+                "description": "Subtract two numbers.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {"type": "number", "description": "The first number."},
+                        "b": {"type": "number", "description": "The second number."}
+                    },
+                    "required": ["a", "b"]
+                },
+            },
+            {
+                "name": "multiply",
+                "description": "Multiply two numbers.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {"type": "number", "description": "The first number."},
+                        "b": {"type": "number", "description": "The second number."}
+                    },
+                    "required": ["a", "b"]
+                },
+            },
+            {
+                "name": "divide",
+                "description": "Divide two numbers.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "a": {"type": "number", "description": "The first number."},
+                        "b": {"type": "number", "description": "The second number."}
+                    },
+                    "required": ["a", "b"]
+                },
+            }
+        ]
 
-    @staticmethod
-    def _raise_error(message: str):
-        raise OperationError(message)
+        prompt = f"Perform {self.operation} on {self.operand1} and {self.operand2}"
+        function_name, arguments = call_groq_function(prompt, functions)
 
-    def to_dict(self) -> Dict[str, Any]:
-        return {
-            'operation': self.operation,
-            'operand1': str(self.operand1),
-            'operand2': str(self.operand2),
-            'result': str(self.result),
-            'timestamp': self.timestamp.isoformat()
-        }
-
-    @staticmethod
-    def from_dict(data: Dict[str, Any]) -> 'Calculation':
-        try:
-            calc = Calculation(
-                operation=data['operation'],
-                operand1=Decimal(data['operand1']),
-                operand2=Decimal(data['operand2'])
-            )
-            calc.timestamp = datetime.datetime.fromisoformat(data['timestamp'])
-            Calculation._validate_result(calc, Decimal(data['result']))
-            return calc
-        except (KeyError, InvalidOperation, ValueError) as e:
-            raise OperationError(f"Invalid calculation data: {str(e)}")
-
-    @staticmethod
-    def _validate_result(calc, saved_result):
-        if calc.result != saved_result:
-            logging.warning(f"Loaded calculation result {saved_result} differs from computed result {calc.result}")
-
-    def __str__(self) -> str:
-        return f"{self.operation}({self.operand1}, {self.operand2}) = {self.result}"
-
-    def __repr__(self) -> str:
-        return (
-            f"Calculation(operation='{self.operation}', "
-            f"operand1={self.operand1}, "
-            f"operand2={self.operand2}, "
-            f"result={self.result}, "
-            f"timestamp='{self.timestamp.isoformat()}')"
-        )
-
-    def __eq__(self, other: object) -> bool:
-        if not isinstance(other, Calculation):
-            return NotImplemented
-        return (
-            self.operation == other.operation and
-            self.operand1 == other.operand1 and
-            self.operand2 == other.operand2 and
-            self.result == other.result
-        )
-
-    def format_result(self, precision: int = 10) -> str:
-        try:
-            return str(self.result.normalize().quantize(Decimal(f"1.{'0' * precision}")).normalize())
-        except InvalidOperation:
-            return str(self.result)
+        if function_name and arguments:
+            if function_name == "add":
+                return Decimal(arguments["a"]) + Decimal(arguments["b"])
+            elif function_name == "subtract":
+                return Decimal(arguments["a"]) - Decimal(arguments["b"])
+            elif function_name == "multiply":
+                return Decimal(arguments["a"]) * Decimal(arguments["b"])
+            elif function_name == "divide":
+                result = divide(Decimal(arguments["a"]), Decimal(arguments["b"]))
+                if isinstance(result, str): 
+                    raise OperationError(result)
+                return Decimal(result)
+            else:
+                raise OperationError("Error: Unknown function called")
+        else:
+            raise OperationError("No function call was made or an error occurred.")

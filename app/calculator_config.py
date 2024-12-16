@@ -1,6 +1,5 @@
 from dataclasses import dataclass, field
 from decimal import Decimal
-from numbers import Number
 from pathlib import Path
 import os
 from typing import Optional
@@ -22,6 +21,13 @@ class CalculatorConfig:
     max_input_value: Decimal = field(default_factory=lambda: Decimal(os.getenv('CALCULATOR_MAX_INPUT_VALUE', '1e999')))
     default_encoding: str = field(default_factory=lambda: os.getenv('CALCULATOR_DEFAULT_ENCODING', 'utf-8'))
     auto_save: Optional[bool] = None
+
+    # PostgreSQL Configuration
+    pg_database: str = field(default_factory=lambda: os.getenv("PG_DATABASE", "calculator_db"))
+    pg_user: str = field(default_factory=lambda: os.getenv("PG_USER", "postgres"))
+    pg_password: str = field(default_factory=lambda: os.getenv("PG_PASSWORD", "password"))
+    pg_host: str = field(default_factory=lambda: os.getenv("PG_HOST", "localhost"))
+    pg_port: int = field(default_factory=lambda: int(os.getenv("PG_PORT", "5432")))
 
     def __post_init__(self):
         if self.auto_save is None: 
@@ -51,3 +57,5 @@ class CalculatorConfig:
             raise ConfigurationError("precision must be positive")
         if self.max_input_value <= 0:
             raise ConfigurationError("max_input_value must be positive")
+        if not all([self.pg_database, self.pg_user, self.pg_password]):
+            raise ConfigurationError("PostgreSQL configuration is incomplete")
